@@ -1,0 +1,13 @@
+{
+    "name": "PHPMailer-test",
+    "description": "Just a test",
+    "authors": [
+        {
+            "name": "Diego Fernandez",
+            "email": "admin@blowyourmind.me"
+        }
+    ],
+    "require": {
+      "phpmailer/phpmailer": "~5.2"
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arduino Timbre</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+  <center> <h1>Smart Doorbell</h1> </center>
+  <center> <h4>Modificación de parámetros</h4> </center>
+      <blockquote style="border-left: 5px solid #428bca; font-size: 100%;">
+      <p class="text-primary">Valores actuales: </p>
+      <p class="">Distancia: <label id="distance_label"></label> centímetros</p>
+      <p class="">Tiempo:  <label id="time_label"></label> segundos</p>
+      </blockquote>
+  <form action="setValues.php">
+    <div class="form-group">
+      <label for="distance">Distancia</label>
+      <input type="number" class="form-control" name="distance" id="distance" min="1" max="99" placeholder="En metros">
+      <br>
+      <label for="time">Tiempo</label>
+      <input type="number" class="form-control" name="time" id="time" min="1" max="99" placeholder="En segundos">
+      <br><br>
+      <input type="submit" class="pull-right btn btn-primary" value="Enviar">
+      <input type="button" onclick="restoreValues()" class="pull-right btn btn-default" title="Insertar valores predeterminados" value="Restaurar">
+    </div>
+  </form>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
